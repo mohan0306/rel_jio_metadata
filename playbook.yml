@@ -1,0 +1,87 @@
+shutdown -h now   shutdown system
+init 0
+
+shutdown -r now    ->reboot
+reboot  ->logout leaving session
+
+uname -r 	show used kernel version
+
+date 	show system date
+
+cat /proc/version 	show version of the kernel
+
+cd /home 	enter to directory '/ home'
+
+cd .. 		go back one level
+
+cd ../.. 	go back two levels
+
+cd 			go to home directory
+
+cd ~utente 	go to home directory
+
+cd - 		go to previous directory
+
+pwd 		show the path of work directory
+
+ls	 		view files of directory
+
+ls -F 		view files of directory
+
+ls -l 		show details of files and directory
+
+ls -a 		show hidden files
+ls *
+
+mkdir dir1 	create a directory called 'dir1'
+
+mkdir dir1 dir2 	create two directories simultaneously
+
+mkdir -p /tmp/dir1/dir2 	create a directory tree
+
+rm -f file1 	delete file called 'file1'
+
+rmdir dir1 		delete directory called 'dir1'
+
+rm -rf dir1 	remove a directory called 'dir1' and contents recursively
+
+rm -rf dir1 dir2 	remove two directories and their contents recursively
+
+mv dir1 new_dir 	rename / move a file or directory
+
+cp file1 file2 	copying a file
+
+cp dir/* . 	copy all files of a directory within the current work directory
+
+cp -a /tmp/dir1 . copy a directory within the current work directory
+
+cp -a dir1 dir2 copy a directory
+
+ln -s file1 lnk1 	create a symbolic link to file or directory
+
+ln file1 lnk1 	create a physical link to file or directory
+
+touch -t 0712250000 fileditest modify timestamp of a file or directory -
+(YYMMDDhhmm)
+
+find / -name file1 search file and directory into root filesystem from '/'
+
+find / -user user1 search files and directories belonging to 'user1'
+
+find /home/user1 -name *.bin 	search files with '. bin' extension within directory '/home/user1'
+
+mount /dev/hda2 /mnt/hda2 	mount disk called hda2 - verify existence of thedirectory '/ mnt/hda2'
+
+umount /dev/hda2 	unmount disk called hda2 - exit from mount point '/mnt/hda2' first
+
+fuser -km /mnt/hda2 	force umount when the device is busy
+
+mount -t vfat /dev/hda5 /mnt/hda5 	mount a Windows FAT32 file system
+
+df -h 	show list of partitions mounted
+
+ls -lSr |more 	show size of the files and directories ordered by size
+
+du -sh dir1 	estimate space used by directory 'dir1'
+
+du -sh * | sort -rn 	show size of the files and directories sorted by size
