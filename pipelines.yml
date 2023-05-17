@@ -6,6 +6,10 @@ gufugtyirkyg76rfgyh789tyt7fif679tuyguyghwerwe4teyrthjtyjsdfgggggggggre8
     6  mysql -h database-1.cbwkv8e1fpqi.us-east-1.rds.amazonaws.com -u admin -p mysql
 	
 	
-	password  admin123
-uighigutfgjo;kitg
-tgudfuiuhiljn
+Create table and insert value into table
+
+INSERT INTO pet
+       VALUES ('Puffball','Diane','hamster','f','1999-03-30',NULL);
+	   
+	   CREATE TABLE pet (name VARCHAR(20), owner VARCHAR(20),
+       species VARCHAR(20), sex CHAR(1), birth DATE, death DATE)
